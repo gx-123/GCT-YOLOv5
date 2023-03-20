@@ -1,0 +1,23 @@
+# PASCAL VOC dataset http://host.robots.ox.ac.uk/pascal/VOC/
+# Train command: python train.py --data voc.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /VOC
+#     /yolov5
+
+
+# download command/URL (optional)
+#download: bash data/scripts/get_voc.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+
+train: D:\pytorch\DataSet\Rice\images\train  # 16551 images
+val: D:\pytorch\DataSet\Rice\images\val # 4952 images
+test: D:\pytorch\DataSet\Rice\images\test
+
+
+# number of classes
+nc: 3
+
+# class names
+names: ['Bacterial_leaf_blight','Leaf_Blast', 'Brown_spot']
